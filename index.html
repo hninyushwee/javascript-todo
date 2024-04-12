@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigment3</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="" class="alert">Alert Box</a></li>
+                <li><a href="" class="todo">Todo</a></li>
+                <li><a href="" class="form">Form</a></li>
+            </ul>
+        </nav>
+        <div class="slider"></div>
+        <hr>
+    </header>
+    <main>
+        <section class="alert-page active">
+            <div class="dialog">
+                <button class="btn open-dialog">Open dialog</button>
+            </div>
+        </section>
+        <section class="todo-page disappear">
+            <div class="todo-container">
+                <h3 style="text-align: center;">Todo App</h3>
+                    <input type="text" placeholder="Search Todo" id="search-todo">
+                        <ul class="todo-list">
+                        </ul>
+                    <input type="text" placeholder="Enter new todo" id="put-todo">
+                    <span class="warning-text"></span>
+                    <button class="add-todo">Add Todo</button>
+            </div>
+        </section>
+        <section class="form-page disappear ">
+            <form id="form-container" method="post">
+                <h3>Login</h3>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" >
+                    <p class="error name-error">Name must include a lowercase letter and a number</p>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" >
+                    <p class="error email-error">Invalid email format</p>
+
+                <label for="pass">Password</label>
+                <input type="password" name="pass" id="pass">
+                    <p class="error pass-error">Password must be at least 6 characters</p>
+
+                <button class="login">Login</button>
+            </form>
+        </section>
+        <div class="dialog-box">
+            <h3>Payment successful</h3>
+            <p>Your payment has been successfully submitted. We've sent you an email with all of the details of your order.</p>
+            <button class="btn close-dialog">Got it, thanks!</button>
+        </div>
+        <div class="overlay"></div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
